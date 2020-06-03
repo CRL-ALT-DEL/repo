@@ -103,9 +103,9 @@ def level_3(level):
     print_pause("However... right in front of you is a deep dark pit.\n")
     print_pause("It's so deep you can't even see the bottom.\n")
     print_pause("What do you do?")
-    deep_pit = input("1. You take your chances and try to jump over the pit\n"
-                     "2. You take a second to think of other options.\n")
     while True:
+        deep_pit = input("1. You try to jump over the pit\n"
+                         "2. You take a second to think of other options.\n")
         if deep_pit == "1":
             chance = random.randint(1, 2)
             if chance == 1:
@@ -160,10 +160,10 @@ def level_4(level):
     print_pause("the ancient relic you came searching for.\n")
     print_pause("It's a golden monkey statue!\n")
     print_pause("What do you do?")
-    golden_monkey = input("1. You grab the monkey and make a run for it!\n"
-                          "2. You take a second to think of other options.\n")
     while True:
-        if golden_monkey == '1':
+        monkey = input("1. You grab the monkey and make a run for it!\n"
+                       "2. You take a second to think of other options.\n")
+        if monkey == '1':
             chance = random.randint(1, 2)
             if chance == 1:
                 print_pause("\nYou stand there\n")
@@ -196,7 +196,7 @@ def level_4(level):
                 print_pause("is a huge boulder\n")
                 print_pause("coming straight for your head.\n")
                 game_over(level)
-        elif golden_monkey == '2':
+        elif monkey == '2':
             print_pause("\nYou take a second to think things through.\n")
             print_pause("You remember seeing\n")
             print_pause("something like this in a movie before.\n")
@@ -209,7 +209,7 @@ def level_4(level):
             level_5(level)
         else:
             print_pause("Please make a valid selection")
-    return golden_monkey
+    return monkey
 
 
 def level_5(level):
@@ -225,9 +225,9 @@ def level_5(level):
     print_pause("You come out of the mountain and appear on a cliff.\n")
     print_pause("There is a running river beneath you.\n")
     print_pause("What do you do?")
-    jump = input("1. You jump into the river\n"
-                 "2. You take a second to think of other options.\n")
     while True:
+        jump = input("1. You jump into the river\n"
+                     "2. You take a second to think of other options.\n")
         if jump == '1':
             print_pause("\nYou jump!\n")
             print_pause(".\n")
