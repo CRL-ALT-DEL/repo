@@ -4,7 +4,7 @@ import random
 
 def print_pause(message_to_print):
     print(message_to_print)
-    time.sleep(0)
+    time.sleep(1)
 
 
 def game_over(level):
