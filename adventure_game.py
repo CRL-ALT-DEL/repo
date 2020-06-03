@@ -108,10 +108,10 @@ def level_3(level):
         if deep_pit == "1":
             chance = random.randint(1, 2)
             if chance == 1:
-                print_pause("\nYou back up a few good feet...\n")
-                print_pause("to get a running start...\n")
+                print_pause("\nYou back up a few feet...\n")
+                print_pause("and get a running start...\n")
                 print_pause("You take a deep breath and hold it...\n")
-                print_pause("before exhaling...\n")
+                print_pause("EXHALE...\n")
                 print_pause("This is it! You dash down the dirt pathway...\n")
                 print_pause("SUCCESS!\n")
                 print_pause("You made a giant leap...\n")
