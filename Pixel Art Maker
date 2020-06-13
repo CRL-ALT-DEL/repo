@@ -13,9 +13,8 @@ gridSize.addEventListener("submit", function(event){
 
 //Add Color function call
 function addColor(event) {
-    const color = document.getElementById("colorPicker").value;
-    event.target.bgColor=color;
-    }
+    event.target.style.backgroundColor = colorInput.value;
+};
 
     //Create grid and adds color
 function makeGrid(height, width) {
