@@ -4,9 +4,6 @@ const width = document.getElementById("inputWidth");
 const gridSize = document.getElementById("sizePicker");
 const canvas = document.getElementById("pixelCanvas");
 
-// Select color input
-const colorInput = document.getElementById("colorPicker");
-
 
 // When size is submitted by the user, call makeGrid()
 gridSize.addEventListener("submit", function(event){
@@ -14,10 +11,14 @@ gridSize.addEventListener("submit", function(event){
     makeGrid(height.value, width.value);
 })
 
+//canvas.removeChild(canvas);
+
 //Add Color function call
 function addColor(event) {
-    style.backgroundColor = colorInput.value;
-    };
+    const color = document.getElementById("colorPicker").value;
+    event.style.backgroundColor= 'color';
+    }
+
 
 
 //Create grid and adds color
