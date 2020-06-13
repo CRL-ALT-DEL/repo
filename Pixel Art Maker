@@ -6,6 +6,7 @@ const canvas = document.getElementById("pixelCanvas");
 
 // When size is submitted by the user, call makeGrid()
 gridSize.addEventListener("submit", function(event){
+//clearing grid and keeping grid on display solution supported from Udacity Mentors
     canvas.innerHTML = null;
     event.preventDefault();
     makeGrid(height.value, width.value);
@@ -21,7 +22,7 @@ function makeGrid(height, width) {
         }
     } 
 }
-//Add Color to cell - solution supported by Udacity mentor
+//Add Color to cell - solution supported by a Q&A from my Udacity mentor
 function addColor(event) {
     event.target.style.backgroundColor = colorPicker.value;
     }
