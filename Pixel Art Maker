@@ -14,8 +14,6 @@ gridSize.addEventListener("submit", function(event){
     makeGrid(height.value, width.value);
 })
 
-//canvas.removeChild(canvas);
-
 //Add Color function call
 function addColor(event) {
     style.backgroundColor = colorInput.value;
