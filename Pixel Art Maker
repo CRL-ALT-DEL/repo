@@ -1,28 +1,27 @@
-// Select size input
+// Set variables for grid size and cell color inputs
 const height = document.getElementById("inputHeight");
 const width = document.getElementById("inputWidth");
 const gridSize = document.getElementById("sizePicker");
 const canvas = document.getElementById("pixelCanvas");
 
-
 // When size is submitted by the user, call makeGrid()
 gridSize.addEventListener("submit", function(event){
+    canvas.innerHTML = null;
     event.preventDefault();
     makeGrid(height.value, width.value);
 })
 
-//Add Color function call
-function addColor(event) {
-    event.target.style.backgroundColor = colorInput.value;
-};
-
-    //Create grid and adds color
+//Create grid function
 function makeGrid(height, width) {
-    for (let i = 0; i < height; i++) {
-        let row = canvas.insertRow(i);
+    for (let x = 0; x < height; x++) {
+        let row = canvas.insertRow(x);
         for (let y = 0; y < width; y++) {
             let cell = row.insertCell(y);
         canvas.addEventListener('click', addColor);
         }
     } 
 }
+//Add Color to cell - solution supported by Udacity mentor
+function addColor(event) {
+    event.target.style.backgroundColor = colorPicker.value;
+    }
